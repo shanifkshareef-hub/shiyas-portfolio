@@ -391,34 +391,34 @@ $(function () {
 
 /* ===============================  Dark Mode  =============================== */
 
-$(function () {
+// $(function () {
 
-    function isLight() {
-        return localStorage.getItem("light-mode");
-    }
+//     function isLight() {
+//         return localStorage.getItem("light-mode");
+//     }
 
-    function toggleRootClass() {
-        document.querySelector("body:not(.business-home, .page-preview)").classList.toggle("light");
-    }
+//     function toggleRootClass() {
+//         document.querySelector("body:not(.business-home, .page-preview)").classList.toggle("light");
+//     }
 
-    function toggleLocalStorageItem() {
-        if (isLight()) {
-            localStorage.removeItem("light-mode");
-        } else {
-            localStorage.setItem("light-mode", "set");
-        }
-    }
+//     function toggleLocalStorageItem() {
+//         if (isLight()) {
+//             localStorage.removeItem("light-mode");
+//         } else {
+//             localStorage.setItem("light-mode", "set");
+//         }
+//     }
 
-    if (isLight()) {
-        toggleRootClass();
-    }
+//     if (isLight()) {
+//         toggleRootClass();
+//     }
 
-    document.querySelector(".theme-icon").addEventListener("click", () => {
-        toggleLocalStorageItem();
-        toggleRootClass();
-    });
+//     document.querySelector(".theme-icon").addEventListener("click", () => {
+//         toggleLocalStorageItem();
+//         toggleRootClass();
+//     });
 
-});
+// });
 
 
 // === window When Loading === //
